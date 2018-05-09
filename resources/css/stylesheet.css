@@ -1,0 +1,293 @@
+body{
+  padding:0 0px;
+  max-width: 960px;
+  margin:0 auto;
+  display:flex;
+  background-color: black;
+  flex-direction: column;
+font-family: helvetica;
+font-size: 18px;
+justify-content: center;
+align-items: center;
+}
+.logo{
+  display:flex;
+  background-color: black;
+  color:white;
+  align-items: center;
+  width:100%;
+
+}
+.logo span{
+  font-size: 1rem;
+  padding: 0.66rem ;
+
+}
+.logo img{
+  height:1.5rem;
+  padding:0 1rem 0 0.5rem;
+}
+.main{
+  background-image: url("../images/moto.jpeg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:25rem;
+
+  width:100%;
+  padding:0 100px;
+
+}
+.main img{
+  padding:0 100px;
+}
+.headline{
+  width: 20rem;
+  padding: 2em 3em;
+  background-color: black;
+  color:white;
+  position: relative;
+  top:9rem;
+}
+.content{
+width:100%;
+
+}
+.headline h3{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.headline h1{
+  font-size: 2rem;
+  font-weight: bold;
+    line-height: 2.5rem;
+
+}
+nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: firebrick;
+  color:white;
+  width:100%;
+  height:auto;
+  padding:0.75rem 100px;
+
+
+}
+nav span{
+  padding:0px;
+
+}
+nav a{
+  color:white;
+  font-size:1rem;
+  text-decoration: none;
+}
+.gallery{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color:white;
+  width:100%;
+
+  padding:0px 100px;
+flex-wrap: wrap;
+
+}
+.gallery-pen{
+  background-image: url(../images/pen.png);
+      border: black solid 0px;
+      background-size: cover;
+      height: 9rem;
+      width: 9rem;
+
+
+}
+.gallery-watch{
+  background-image: url(../images/watch.png);
+      border: black solid 0px;
+      background-size: cover;
+      width:9rem;
+      height:9rem;
+
+}
+.gallery-glasses{
+  background-image: url(../images/glasses.png);
+      border: black solid 0px;
+      background-size: cover;
+      height: 4rem;
+      width: 9rem;
+}
+.img-frame{
+  margin:2rem 0 ;
+  display:flex;
+  flex-direction: column;
+  justify-content:  center;
+width:9rem;
+  height:9rem;
+
+}
+.gallery-item1{
+margin: 3rem 0;
+  width: 30%;
+  display:flex;
+
+  justify-content: flex-end;
+  flex-direction: column;
+  border:black solid 4px;
+  align-items: center;
+}
+.gallery-item2{
+  margin: 3rem 0;
+  width: 30%;
+  display:flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border:black solid 4px;
+  align-items: center;
+}
+.gallery-item3{
+margin: 3rem 0;
+  width: 30%;
+  display:flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border:black solid 4px;
+  align-items: center;
+}
+.gallery h3{
+background-color: black;
+color:white;
+font-size: 1rem;
+padding:0.5rem 0px;
+text-align: center;
+width: 100%;
+
+
+}
+.location h3{
+background-color: black;
+color:white;
+font-size: 1rem;
+padding: 1rem 2rem 1rem;
+text-align: left;
+
+border:black solid 0px;
+}
+.location h4{
+background-color: white;
+color:black;
+font-size: 1rem;
+padding:0 0;
+text-align: left;
+width: 100%;
+}
+.loc-frame{
+  width:100%;
+  display:flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  padding:4rem 100px;
+
+}
+.location{
+  width: 35%;
+  display:flex;
+  flex-direction: column;
+  border:black solid 0px;
+
+
+}
+.footer h3{
+background-color: black;
+color:white;
+font-size: 1rem;
+padding:100px 0;
+text-align: center;
+width: 100%;
+}
+.footer{
+  justify-content: center;
+  display:flex;
+  background-color: black;
+height: 5rem;
+  width:100%;
+}
+.medium{
+  display:none;
+
+}
+@media only screen and (max-width: 1024px) {
+    body {
+      overflow-x: hidden;
+        background-color: lightblue;
+    }
+    .gallery-item3{
+      display:none;
+    }
+    .gallery-item1{
+      width:46%;
+    }
+    .gallery-item2{
+      width:46%;
+    }
+    .location{
+      width:35%;
+    }
+    .large{
+      display: none;}
+      .medium{
+        display:flex;
+      }
+}
+@media only screen and (max-width: 640px){
+
+  .headline h3{
+    font-size: 0.77rem;
+
+  }
+  .headline h1{
+    font-size: 1rem;
+      line-height: 1.5rem;
+
+
+  }
+  .gallery-item2{
+    display:none;
+  }
+  .gallery-item1{
+    width:90%;
+    margin-bottom:0;
+
+  }
+  body {
+    overflow-x: hidden;
+      background-color: red;
+}
+.location{
+  width:90%;
+}
+.gallery{
+
+  justify-content: center;
+}
+.loc-frame{
+  justify-content: center;
+
+}
+.location{
+  margin-top:0.5rem;
+}
+.headline{
+  top:10rem;
+  padding: 1em 2em;
+
+}
+.main{
+  height:15rem;
+}
+}
