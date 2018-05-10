@@ -1,21 +1,24 @@
 body{
-  padding:0 0px;
+  font-family: helvetica;
+  font-size: 18px;
+}
+.page{
+
   max-width: 960px;
   margin:0 auto;
-  display:flex;
-  background-color: yellow;
-  flex-direction: column;
-font-family: helvetica;
-font-size: 18px;
-justify-content: center;
-align-items: center;
+
+
+
+}
+.logo_banner{
+  background-color: black;
+  color:white;
 }
 .logo{
   display:flex;
-  background-color: black;
-  color:white;
+
   align-items: center;
-  width:100%;
+
 
 }
 .logo span{
@@ -29,17 +32,12 @@ align-items: center;
 }
 .main{
   background-image: url("../images/moto.jpeg");
-  background-size:cover;
   background-repeat: no-repeat;
-  height:25rem;
-
-  width:100%;
-  padding:0 100px;
-
+background-position: center;
+background-size: cover;
+height: 25rem;
 }
-.main img{
-  padding:0 100px;
-}
+
 .headline{
   width: 20rem;
   padding: 2em 3em;
@@ -62,15 +60,19 @@ width:100%;
     line-height: 2.5rem;
 
 }
+.nav_banner{
+  background-color: firebrick;
+  color:white;
+}
 nav{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: firebrick;
   color:white;
   width:100%;
   height:auto;
-  padding:0.75rem 100px;
+  padding:0.75rem;
 
 
 }
@@ -91,7 +93,7 @@ nav a{
   color:white;
   width:100%;
 
-  padding:0px 100px;
+
 flex-wrap: wrap;
 
 }
@@ -191,7 +193,7 @@ width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 4rem;
-  padding:4rem 100px;
+  padding:4rem 0;
 
 }
 .location{
@@ -222,8 +224,11 @@ height: 5rem;
 
 }
 @media only screen and (max-width: 1024px) {
-    body {
-      overflow: hidden;
+  ::-webkit-scrollbar {
+      display: none;
+  }
+    .body {
+
         background-color: lightblue;
     }
     .gallery-item3{
@@ -244,7 +249,7 @@ height: 5rem;
         display:flex;
       }
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 600px){
 
   .headline h3{
     font-size: 0.77rem;
@@ -264,8 +269,11 @@ height: 5rem;
     margin-bottom:0;
 
   }
+  ::-webkit-scrollbar {
+    display: none;
+}
   body {
-    overflow: hidden;
+
       background-color: red;
 }
 .location{
