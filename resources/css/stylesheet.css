@@ -3,7 +3,7 @@ body{
   max-width: 960px;
   margin:0 auto;
   display:flex;
-  background-color: black;
+  background-color: yellow;
   flex-direction: column;
 font-family: helvetica;
 font-size: 18px;
@@ -223,7 +223,7 @@ height: 5rem;
 }
 @media only screen and (max-width: 1024px) {
     body {
-      overflow-x: hidden;
+      overflow: hidden;
         background-color: lightblue;
     }
     .gallery-item3{
@@ -244,7 +244,7 @@ height: 5rem;
         display:flex;
       }
 }
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 400px){
 
   .headline h3{
     font-size: 0.77rem;
@@ -265,7 +265,7 @@ height: 5rem;
 
   }
   body {
-    overflow-x: hidden;
+    overflow: hidden;
       background-color: red;
 }
 .location{
